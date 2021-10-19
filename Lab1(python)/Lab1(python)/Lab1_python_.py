@@ -1,0 +1,13 @@
+import math
+a=int(input("Введіть кут a= "))
+b=int(input("Введіть кут b= "))
+c=int(input("Введіть кут c= "))
+radianA=float(math.acos((pow(b, 2) + pow(c, 2) - pow(a, 2)) / (2 * b * c)))
+gradusA=int(180 / math.pi * math.acos((pow(b, 2) + pow(c, 2) - pow(a, 2)) / (2 * b * c)))
+radianB=float(math.acos((pow(a, 2) + pow(c, 2) - pow(b, 2)) / (2 * a * c)))
+gradusB=int(180 / math.pi * math.acos((pow(a, 2) + pow(c, 2) - pow(b, 2)) / (2 * a * c)))
+radianC=float(math.acos((pow(b, 2) + pow(a, 2) - pow(c, 2)) / (2 * b * a)))
+gradusC=int(180 / math.pi * math.acos((pow(b, 2) + pow(a, 2) - pow(c, 2)) / (2 * b * a)))
+print("Кут a=",radianA," радіан ",gradusA," градусів")
+print("Кут b=",radianB," радіан ",gradusB," градусів")
+print("Кут c=",radianC," радіан ",gradusC," градусів")
